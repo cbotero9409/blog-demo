@@ -120,6 +120,8 @@ GEM
     ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
     ffi (1.17.1-x86_64-linux-musl)
+    friendly_id (5.5.1)
+      activerecord (>= 4.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -234,6 +236,10 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
+    ransack (4.3.0)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     rdoc (6.12.0)
       psych (>= 4.0.0)
     regexp_parser (2.10.0)
@@ -311,12 +317,14 @@ DEPENDENCIES
   capybara
   debug
   devise
+  friendly_id (~> 5.5)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
   noticed (~> 2.6)
   puma (>= 5.0)
   rails (~> 7.1.5, >= 7.1.5.1)
+  ransack (~> 4.3)
   selenium-webdriver
   sprockets-rails
   sqlite3 (>= 1.4)
